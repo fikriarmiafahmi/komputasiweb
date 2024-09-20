@@ -1,33 +1,29 @@
 html {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    background-color: rgb(0, 47, 255);
+    background-image: url("./bg.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .identitas {
-    display: inline-block;
-    margin: 5px;
-    padding: 2px 10px;
     border-style: groove;
     border-radius: 5px;
+    color: white;
 }
 
-.list {
-    width: 100%;
-    height: 100%;
-}
 .baris1 {
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 .baris2 {
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .pertemuan1,
@@ -37,7 +33,6 @@ body {
 .pertemuan5,
 .pertemuan6 {
     width: 250px;
-    margin: 10px 50px;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -73,7 +68,6 @@ body {
 }
 
 .button a {
-    text-decoration: none;
     width: 100%;
     height: inherit;
     padding: inherit;           
@@ -88,3 +82,4 @@ body {
 .button a:hover {
     color: white;
 }
+
