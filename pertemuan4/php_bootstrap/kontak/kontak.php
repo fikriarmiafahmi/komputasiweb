@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,12 +21,12 @@
         <div class="bg-light text-dark d-inline-block rounded-lg">
             <div class="m-1">
                 <?php
-                $nama = $_GET['nama'];
-                $email = $_GET['email'];
-                $gender = isset($_GET['gender']) ? $_GET['gender'] : '';
-                $hobby1 = $_GET['text1'];
-                $hobby2 = $_GET['text2'];
-                $hobby3 = $_GET['text3'];
+                $nama = $_POST['nama'];
+                $email = $_POST['email'];
+                $gender = isset($_POST['gender']) ? $_POST['gender'] : '';
+                $hobby1 = $_POST['text1'];
+                $hobby2 = $_POST['text2'];
+                $hobby3 = $_POST['text3'];
 
                 echo 'Nama: '.$nama;
                 echo '<br>Email: '.$email;
