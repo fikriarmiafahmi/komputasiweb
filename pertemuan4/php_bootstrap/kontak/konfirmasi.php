@@ -31,12 +31,39 @@
                 echo '<br>Email: '.$email;
                 echo '<br>Gender: '.$gender;
                 echo '<br>Hobby: '.$hobby1;
+                $semuaHobby = $hobby1;
                 if (!empty($hobby2)) {
                     echo ", ".$hobby2;
+                    $semuaHobby = $hobby1.", ".$hobby2;
                 }
                 if (!empty($hobby3)) {
                     echo ", ".$hobby3;
+                    $semuaHobby = $hobby1.", ".$hobby2.", ".$hobby3;
                 }
+                $host = '127.0.0.1';
+                $username = 'root';
+                $password = 'fikri';
+                $database = 'kontak';
+                
+                // Membuat koneksi
+                $conn = new mysqli($host, $username, $password, $database);
+                
+                // Cek koneksi
+                if ($conn->connect_error) {
+                    die("Koneksi gagal: " . $conn->connect_error);
+                }
+                $perintahInsert = $conn->prepare("INSERT INTO kontak (nama, email, gender, hobby) VALUES (?, ?, ?, ?)");
+                $perintahInsert->bind_param("ssss", $nama, $email, $gender, $semuaHobby);
+                
+                // Eksekusi statement
+                if ($perintahInsert->execute()) {
+                    echo "Data berhasil disimpan!";
+                } else {
+                    echo "Error: " . $perintahInsert->error;
+                }
+                
+                // Tutup statement dan koneksi
+                $perintahInsert->close();
                 ?>
             </div>
         </div>
