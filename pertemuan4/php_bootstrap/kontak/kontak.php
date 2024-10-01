@@ -19,11 +19,11 @@
             </div>
             <div class="form-group form-inline">
                 <label for="nama">Nama:</label>
-                <input type="text" class="form-control ml-1" id="nama" name="nama" placeholder="Masukkan nama">
+                <input type="text" class="form-control ml-1" id="nama" name="nama" placeholder="Masukkan nama" required>
             </div>
             <div class="form-group form-inline">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control ml-2" id="email" name="email" placeholder="Masukkan email">
+                <input type="email" class="form-control ml-2" id="email" name="email" placeholder="Masukkan email" required>
             </div>
             <div class="form-group checkbox_gender d-flex">
                 <div>
@@ -31,14 +31,18 @@
                 </div>
                 <div class="ml-1">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" value="Laki-laki" name="gender" id="laki">
+                        <input class="form-check-input" type="radio" value="Laki-laki" name="gender" id="laki" required>
                         <label class="form-check-label" for="laki">Laki-laki</label>
                     </div>
                     <div class="form-check ">
-                        <input class="form-check-input" type="radio" value="Perempuan" name="gender" id="perempuan">
+                        <input class="form-check-input" type="radio" value="Perempuan" name="gender" id="perempuan" required>
                         <label class="form-check-label" for="perempuan">Perempuan</label>
                     </div>
                 </div>
+            </div>
+            <div class="tl mb-3">
+                <label for="tl">Tanggal Lahir:</label>
+                <input type="date" name="tl" id="tl" required>
             </div>
             <div class="form-group checkbox_hobby d-flex">
                 <div class="mt-1">
