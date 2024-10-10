@@ -13,11 +13,11 @@
 <body>
     <div>
         <h3>Instruksi Penggunaan</h3>
-        <p>-Command SQL tugas ini bisa pakai 2 cara, yaitu metode POST lewat <b>inputan.php</b> dan metode GET dari file <b>perintah.php</b></p>
+        <p>-Command SQL tugas ini bisa pakai 2 cara, yaitu POST & GET lewat <b>inputan.php</b>, serta metode GET saja lewat file <b>perintah.php</b></p>
         <p>-Settingan URL untuk perintah SQL di file <b>perintah.php</b> yaitu sebagai berikut:</p>
         <p>INSERT DATA: <code>/perintah.php?insert=true&id=1&nama=tes&nim=2023071018&angkatan=2023</code></p>
         <p>DELETE DATA: <code>/perintah.php?delete=true&where_id=1</code></p>
-        <p>UPDATE DATA: <code>/perintah.php?update=true&set_nama=fikri&where{id=1}</code></p>
+        <p>UPDATE DATA: <code>/perintah.php?update=true&set_nama=fikri&where_id=1</code></p>
     </div>
     
     <div class="container d-flex mt-5 w-100">
