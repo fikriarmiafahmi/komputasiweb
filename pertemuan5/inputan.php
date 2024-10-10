@@ -21,6 +21,7 @@
     
     <div class="container d-flex mt-5 w-100">
         <form class="d-flex flex-column flex-fill mx-4" action="./perintah.php" method="post">
+            <h5>--Wajib isi semua--</h5>
             <input type="text" name="id" placeholder="id (int)" class="mb-3" required>
             <input type="text" name="nama" placeholder="nama (var)" class="mb-3" required>
             <input type="text" name="nim" placeholder="nim (var)" class="mb-3" required>
@@ -29,6 +30,7 @@
         </form>
         
         <form class="d-flex flex-column flex-fill mx-4" action="./perintah.php" method="get">
+            <h5>--Isi salah satu saja--</h5>
             <input type="hidden" name="delete" value="true">
             <input type="text" name="where_id" placeholder="where id (int)" class="mb-3" >
             <input type="text" name="where_nama" placeholder="where nama (var)" class="mb-3" >
@@ -38,6 +40,7 @@
         </form>
         
         <form class="d-flex flex-column flex-fill mx-4" action="./perintah.php" method="get">
+            <h5>--Bisa isi salah satu atau semuanya--</h5>
             <input type="hidden" name="update" value="true">
             <input type="text" name="set_id" placeholder="set id (int)" class="mb-3" >
             <input type="text" name="set_nama" placeholder="set nama (var)" class="mb-3" >
